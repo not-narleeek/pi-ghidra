@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2025-07-16
+
+### Changed
+- Added `@types/node` and `typescript` as dev dependencies. They were
+  missing, so `npm run check` could not run. The extension itself was already
+  type-clean (0 errors) — this just makes the check runnable and CI-ready.
+
 ## [0.1.0] - 2025-07-16
 
 ### Added

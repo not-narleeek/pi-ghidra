@@ -1,6 +1,6 @@
 {
 	"name": "pi-ghidra",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Drive Ghidra from pi — decompile, disassemble, search, and cross-reference binaries during CTF reverse-engineering, with a cached headless project and a PyGhidra venv managed for you.",
 	"type": "module",
 	"keywords": [
@@ -46,7 +46,8 @@
 		"py-check": "python3 -m py_compile scripts/ghidra_query.py && echo 'ghidra_query.py: syntax OK'"
 	},
 	"devDependencies": {
-		"typescript": "^5.6.0"
+		"@types/node": "^22.20.1",
+		"typescript": "^5.9.3"
 	},
 	"peerDependencies": {
 		"@earendil-works/pi-ai": "*",
@@ -55,10 +56,18 @@
 		"typebox": "*"
 	},
 	"peerDependenciesMeta": {
-		"@earendil-works/pi-ai": { "optional": false },
-		"@earendil-works/pi-coding-agent": { "optional": false },
-		"@earendil-works/pi-tui": { "optional": false },
-		"typebox": { "optional": false }
+		"@earendil-works/pi-ai": {
+			"optional": false
+		},
+		"@earendil-works/pi-coding-agent": {
+			"optional": false
+		},
+		"@earendil-works/pi-tui": {
+			"optional": false
+		},
+		"typebox": {
+			"optional": false
+		}
 	},
 	"engines": {
 		"node": ">=18"
